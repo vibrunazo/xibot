@@ -18,36 +18,46 @@ $height: 183px;
     max-width: 500px;
 }
 
-img {
-    width: $width;
-    height: $height;
-    padding: 0px;
-    margin: 0px;
-    max-width: inherit;
-    /* opacity: 50%; */
-}
 
 #output-container {
     width: $width;
+    // height: $height;
     display: flex;
-    background-color: yellow;
+    // background-color: yellow;
     justify-content: center;
+    margin: 20px;
 }
 
 .output {
     width: $width/2;
-    height: $height;
+    // height: $height;
     overflow: hidden;
 }
 
 #left {
-    display: flex;
+    width: $width/2;
+    // display: flex;
     justify-content: flex-end;
-    background-color: blueviolet;
+    // background-color: blueviolet;
+}
+
+#left img {
+    float: right;
 }
 
 #right {
-    background-color: red;
+    // background-color: red;
+    // display: flex;
+}
+
+.output img {
+    width: $width;
+    // height: $height;
+    padding: 0px;
+    margin: 0px;
+    max-width: $width;
+    // max-width: inherit;
+    // opacity: 70%;
 }
 
 .tcont {

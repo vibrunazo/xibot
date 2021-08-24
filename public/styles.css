@@ -8,36 +8,32 @@
   max-width: 500px;
 }
 
-img {
-  width: 490px;
-  height: 183px;
-  padding: 0px;
-  margin: 0px;
-  max-width: inherit;
-  /* opacity: 50%; */
-}
-
 #output-container {
   width: 490px;
   display: flex;
-  background-color: yellow;
   justify-content: center;
+  margin: 20px;
 }
 
 .output {
   width: 245px;
-  height: 183px;
   overflow: hidden;
 }
 
 #left {
-  display: flex;
+  width: 245px;
   justify-content: flex-end;
-  background-color: blueviolet;
 }
 
-#right {
-  background-color: red;
+#left img {
+  float: right;
+}
+
+.output img {
+  width: 490px;
+  padding: 0px;
+  margin: 0px;
+  max-width: 490px;
 }
 
 .tcont {

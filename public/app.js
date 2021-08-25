@@ -1,11 +1,21 @@
 // console.log(firebase);
 
-console.log('test');
+console.log('testa');
 
 // const testImg = document.querySelector('#testimg');
 const img_left = document.querySelector('#img_left');
 const img_right = document.querySelector('#img_right');
 const urlEl = document.querySelector('#urlInput');
+
+let params = new URL(window.location.href).searchParams;
+let img_param = params.get('i');
+console.log(img_param);
+
+if (img_param !== null) {
+    console.log('img is NOT null');
+    urlEl.value = img_param;
+    testf();
+}
 
 img_left.onload = function() {
     console.log(this.width + 'x' + this.height);

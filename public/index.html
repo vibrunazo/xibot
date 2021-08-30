@@ -12,16 +12,18 @@
 </head>
 <body>
 
-    <nav class="navbar is-primary subtitle py-4 px-2">
-        Welcome to CrossEye Bot ❌👀
+    <nav class="navbar is-primary subtitle py-4">
+        ❌👀CrossEye Bot 
     </nav>
     <div class="card">
         <section class=" section ">
-            Choose an image
-            <input class="input" type="text" placeholder="Search" id="urlInput">
-            <button class="button is-primary" onclick="testf()">
-                Convert
-            </button>
+            Choose a 3d image to toggle between Parallel View and Cross View.
+            <div id="input-container">
+                <input class="input" type="text" placeholder="Choose an image" id="urlInput">
+                <button id="button-load" class="button is-primary" onclick="testf()">
+                    Load
+                </button>
+            </div>
         </section>
     </div>
 

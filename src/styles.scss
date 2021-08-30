@@ -1,52 +1,55 @@
 @charset "utf-8";
 // @import "../node_modules/bulma/bulma.sass";
 
-$width: 490px;
+$width: 350px;
 $height: 183px;
 
 .navbar {
     // padding: 15px;
+    width: 100%;
 }
 
 .card {
-    margin: 16px;
+    margin: 10px;
     max-width: 600px;
 }
 
-.panel {
-    margin: 16px;
-    max-width: 500px;
+.tabs {
+    margin: 20px;
 }
-
 
 #output-container {
     width: $width;
+    max-width: 100%;
     // height: $height;
     display: flex;
-    // background-color: yellow;
+    background-color: yellow;
     justify-content: center;
-    margin: 20px;
+    margin: 0px;
 }
 
 .output {
     width: $width/2;
+    // width: 50%;
     // height: $height;
     overflow: hidden;
 }
 
 #left {
     width: $width/2;
+    // width: 50%;
     // display: flex;
     justify-content: flex-end;
-    // background-color: blueviolet;
+    background-color: green;
 }
 
 #left img {
     float: right;
+    // width: 200%;
 }
 
 #right {
-    // background-color: red;
+    background-color: red;
     // display: flex;
 }
 
@@ -60,23 +63,19 @@ $height: 183px;
     // opacity: 70%;
 }
 
-.tcont {
-    display: flex;
-    justify-content: flex-end;
+#original-container {
     width: $width;
-    height: $height;
-    background-color: yellow;
+    // margin: 20px;
+    // background-color: red;
 }
 
-.t1 {
-    width: $width/5;
-    height: $height;
-    background-color: red;
+#original-container img {
+    width: $width;
 }
 
-.t2 {
-    width: $width/5;
-    height: $height;
-    // justify-self: end;
-    background-color: blue;
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
 }

@@ -25,7 +25,25 @@
         </section>
     </div>
 
- <br><br>
+    <div class="tabs is-toggle">
+        <ul>
+          <li id="tab_original" class="" onclick="clickedOriginal()">
+            <a>
+              <span>Original</span>
+            </a>
+          </li>
+          <li id="tab_inv" class="is-active" onclick="clickedInv()">
+            <a>
+              <span>Inverted</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+ <div id="original-container" class="is-hidden">
+    <img id="img_original" src="https://i.redd.it/cpw4zqfpvqj61.png"> 
+ </div>
+ 
  <div id="output-container">
      <div id="left" class="output">
          <img id="img_left" src="https://i.redd.it/cpw4zqfpvqj61.png"> 
@@ -34,8 +52,10 @@
          <img id="img_right" src="https://i.redd.it/cpw4zqfpvqj61.png"> 
      </div>
  </div>
-<br><br>
 
+<div class="footer">
+    Last updated: 
+</div>
 
 
 

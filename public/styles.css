@@ -1,57 +1,62 @@
+.navbar {
+  width: 100%;
+}
+
 .card {
-  margin: 16px;
+  margin: 10px;
   max-width: 600px;
 }
 
-.panel {
-  margin: 16px;
-  max-width: 500px;
-}
-
-#output-container {
-  width: 490px;
-  display: flex;
-  justify-content: center;
+.tabs {
   margin: 20px;
 }
 
+#output-container {
+  width: 350px;
+  max-width: 100%;
+  display: flex;
+  background-color: yellow;
+  justify-content: center;
+  margin: 0px;
+}
+
 .output {
-  width: 245px;
+  width: 175px;
   overflow: hidden;
 }
 
 #left {
-  width: 245px;
+  width: 175px;
   justify-content: flex-end;
+  background-color: green;
 }
 
 #left img {
   float: right;
 }
 
-.output img {
-  width: 490px;
-  padding: 0px;
-  margin: 0px;
-  max-width: 490px;
-}
-
-.tcont {
-  display: flex;
-  justify-content: flex-end;
-  width: 490px;
-  height: 183px;
-  background-color: yellow;
-}
-
-.t1 {
-  width: 98px;
-  height: 183px;
+#right {
   background-color: red;
 }
 
-.t2 {
-  width: 98px;
-  height: 183px;
-  background-color: blue;
+.output img {
+  width: 350px;
+  padding: 0px;
+  margin: 0px;
+  max-width: 350px;
+}
+
+#original-container {
+  width: 350px;
+}
+
+#original-container img {
+  width: 350px;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
 }

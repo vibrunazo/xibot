@@ -1,11 +1,23 @@
+html, body {
+  height: 100%;
+  z-index: -5;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0) 30%, rgba(0, 0, 0, 0.15) 80%, rgba(0, 0, 0, 0) 100%);
+}
+
 .navbar {
   padding: 20px;
   width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.15) 100%);
 }
 
 .card {
   margin: 10px;
   max-width: 600px;
+  background: linear-gradient(rgba(200, 200, 255, 0.1) 20%, rgba(200, 200, 255, 0.03) 100%);
+  z-index: 1;
 }
 
 .card .section {
@@ -27,6 +39,10 @@
   margin: 10px;
 }
 
+.tabs ul {
+  z-index: 2;
+}
+
 #output-container {
   width: 350px;
   max-width: 100%;
@@ -38,6 +54,7 @@
 .output {
   width: 175px;
   overflow: hidden;
+  z-index: 1;
 }
 
 #left {
@@ -69,4 +86,31 @@
   position: fixed;
   bottom: 0;
   padding: 10px;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.github-link {
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+#github-text {
+  margin-left: 10px;
+  color: #aaa;
+}
+
+#github-text:hover {
+  color: #dc5;
+}
+
+.github-link:hover {
+  color: #dc5;
+}
+
+.github-link svg {
+  fill: currentColor;
 }

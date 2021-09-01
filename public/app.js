@@ -5,7 +5,7 @@
 // firebase is undefined when testing locally,
 // checking so we can still test locally without errors
 if (typeof firebase !== 'undefined') {
-    const analytics = firebase.analytics();
+    var analytics = firebase.analytics();
 }
 
 // const testImg = document.querySelector('#testimg');
@@ -18,9 +18,9 @@ const el_tab_inv = document.querySelector('#tab_inv');
 const el_cont_original = document.querySelector('#original-container');
 const el_cont_inv = document.querySelector('#output-container');
 
-const el_footer = document.querySelector('.footer');
+const el_lastupdate = document.querySelector('.lastupdate');
 
-el_footer.textContent = 'Last updated: ' + document.lastModified;
+el_lastupdate.textContent = 'Last updated: ' + document.lastModified;
 
 let params = new URL(window.location.href).searchParams;
 let img_param = params.get('i');

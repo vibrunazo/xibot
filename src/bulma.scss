@@ -11,11 +11,11 @@
 ////////////////////////////////////////////////
 // SLATE
 ////////////////////////////////////////////////
-$grey-lighter: #98a4ad;
-$grey-light: #7a8288;
-$grey: #455666;
-$grey-dark: #353e47;
-$grey-darker: #2a3038;
+$grey-lighter: #9894ad;
+$grey-light: #7a7c88;
+$grey: #454866;
+$grey-dark: #363547;
+$grey-darker: #2b2a38;
 
 $orange: #f89406;
 $green: #62c462;
@@ -120,6 +120,10 @@ $panel-background-color: lighten($grey-darker, 5);
 $control-height: 2.5em;
 
 ////////
+
+.tabs.is-toggle a {
+    background-color: $body-background-color;
+}
 
 // Import only what you need from Bulma
 @import "../node_modules/bulma/bulma.sass";

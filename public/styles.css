@@ -44,22 +44,40 @@ body {
 }
 
 #output-container {
-  width: 350px;
+  width: 600px;
   max-width: 100%;
   display: flex;
   justify-content: center;
   margin: 0px;
 }
 
+@media (max-width: 500px) {
+  #output-container {
+    width: 400px;
+  }
+}
+
 .output {
-  width: 175px;
+  width: 300px;
   overflow: hidden;
   z-index: 1;
 }
 
+@media (max-width: 500px) {
+  .output {
+    width: 200px;
+  }
+}
+
 #left {
-  width: 175px;
+  width: 300px;
   justify-content: flex-end;
+}
+
+@media (max-width: 500px) {
+  #left {
+    width: 200px;
+  }
 }
 
 #left img {
@@ -67,18 +85,36 @@ body {
 }
 
 .output img {
-  width: 350px;
+  width: 600px;
   padding: 0px;
   margin: 0px;
-  max-width: 350px;
+  max-width: 600px;
+}
+
+@media (max-width: 500px) {
+  .output img {
+    width: 400px;
+  }
 }
 
 #original-container {
-  width: 350px;
+  width: 600px;
+}
+
+@media (max-width: 500px) {
+  #original-container {
+    width: 400px;
+  }
 }
 
 #original-container img {
-  width: 350px;
+  width: 600px;
+}
+
+@media (max-width: 500px) {
+  #original-container img {
+    width: 400px;
+  }
 }
 
 .footer {

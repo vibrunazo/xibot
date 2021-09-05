@@ -1,8 +1,10 @@
 @charset "utf-8";
 // @import "../node_modules/bulma/bulma.sass";
 
-$width: 350px;
-$height: 183px;
+$phone-size: 500px;
+$width: 600px;
+$width-small: 400px;
+// $height: 183px;
 
 html, body {
     height: 100%;
@@ -11,7 +13,11 @@ html, body {
 
 body {
     background: linear-gradient(rgba(0, 0, 0, 0) 30%,rgba(0, 0, 0, 0.15) 80%, rgba(0, 0, 0, 0) 100%);
+    @media (max-width: $phone-size) {
+        // background-color: red;
+    }
 }
+
 
 .navbar {
     padding: 20px;
@@ -51,6 +57,9 @@ body {
 
 #output-container {
     width: $width;
+    @media (max-width: $phone-size) {
+        width: $width-small;
+    }
     max-width: 100%;
     // height: $height;
     display: flex;
@@ -61,6 +70,9 @@ body {
 
 .output {
     width: $width/2;
+    @media (max-width: $phone-size) {
+        width: $width-small/2;
+    }
     // width: 50%;
     // height: $height;
     overflow: hidden;
@@ -69,6 +81,9 @@ body {
 
 #left {
     width: $width/2;
+    @media (max-width: $phone-size) {
+        width: $width-small/2;
+    }
     // width: 50%;
     // display: flex;
     justify-content: flex-end;
@@ -87,6 +102,9 @@ body {
 
 .output img {
     width: $width;
+    @media (max-width: $phone-size) {
+        width: $width-small;
+    }
     // height: $height;
     padding: 0px;
     margin: 0px;
@@ -97,12 +115,18 @@ body {
 
 #original-container {
     width: $width;
+    @media (max-width: $phone-size) {
+        width: $width-small;
+    }
     // margin: 20px;
     // background-color: red;
 }
 
 #original-container img {
     width: $width;
+    @media (max-width: $phone-size) {
+        width: $width-small;
+    }
 }
 
 .footer {

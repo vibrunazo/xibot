@@ -108,7 +108,7 @@ body {
     // height: $height;
     padding: 0px;
     margin: 0px;
-    max-width: $width;
+    max-width: 100vw;
     // max-width: inherit;
     // opacity: 70%;
 }
@@ -118,6 +118,7 @@ body {
     @media (max-width: $phone-size) {
         width: $width-small;
     }
+    max-width: 100%;
     // margin: 20px;
     // background-color: red;
 }

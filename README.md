@@ -13,4 +13,12 @@ But an image that was setup to be viewed in Cross View will look incorrect with 
 
 Really all that the website does is place the input image twice, side by side. Then hides the left side of the left image and the right side of the right image to make it look like it's just one new image with the right side of the left image and the left side of the right image. This is done on the client only. There's no server code rendering any new images. So it's just a simple static web page, cheap to host.
 
+## TODO
+
+- Needs a lot of polish
+
+- Does not work with videos yet.
+
+- Maybe make a reddit bot that will reply to posts of 3d stereograms with a conversion link.
+
 https://vib-xibot.web.app/
